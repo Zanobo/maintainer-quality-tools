@@ -76,6 +76,14 @@ if [ "$clone_result" != "0"  ]; then
     exit $clone_result
 fi;
 
+clone_oca_dependencies /home/travis/dependencies /home/travis/build/Zanobo/joyride_odoo_models
+clone_result=$?
+if [ "$clone_result" != "0"  ]; then
+    echo "Error cloning dependencies"
+    exit $clone_result
+fi;
+
+
 echo "Install webkit (wkhtmltopdf) patched"
 (cd ${HOME}/maintainer-quality-tools/travis/ && wget -qO- http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz | tar -xJ --strip-components=2 wkhtmltox/bin/wkhtmltopdf)
 
