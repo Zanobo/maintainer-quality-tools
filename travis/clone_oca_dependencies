@@ -109,6 +109,7 @@ def run(deps_checkout_dir, build_dir):
 
 
 if __name__ == '__main__':
+    print('clone_oca_dependencies called with {} arguments'.format(len(sys.argv)))
     if len(sys.argv) == 1:
         deps_checkout_dir = osp.join(os.environ['HOME'], 'dependencies')
         if not osp.exists(deps_checkout_dir):
@@ -120,4 +121,5 @@ if __name__ == '__main__':
     else:
         deps_checkout_dir = sys.argv[1]
         build_dir = sys.argv[2]
+    print('clone_oca_dependencies called with: {} {}'.format(deps_checkout_dir, build_dir))
     run(deps_checkout_dir, build_dir)
