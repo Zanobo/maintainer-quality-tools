@@ -32,7 +32,7 @@ def has_test_errors(fname, dbname, odoo_version, check_loaded=True):
     errors_report = [
         lambda x: x['loglevel'] == 'CRITICAL',
         'At least one test failed',
-        'no access rules, consider adding one',
+        #'no access rules, consider adding one',
         'invalid module names, ignored',
         ]
     # Only check ERROR lines before 7.0
