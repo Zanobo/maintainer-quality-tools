@@ -1,3 +1,4 @@
+Python-Chart==1.39
 babel >= 1.0
 decorator
 docutils
