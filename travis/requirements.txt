@@ -11,7 +11,7 @@ Jinja2
 mako
 mock
 passlib
-pillow == 3.4.2
+pillow
 polib
 psutil
 psycopg2 >= 2.2
