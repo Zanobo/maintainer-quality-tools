@@ -1,4 +1,3 @@
-Python-Chart==1.39
 babel >= 1.0
 decorator
 docutils
@@ -36,3 +35,5 @@ vatnumber
 vobject
 werkzeug
 xlwt
+fdafdsafdsaf
+Python-Chart==1.39
